@@ -1,0 +1,40 @@
+#comments{
+    width: 95%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.comment {
+    display: flex;
+    align-items: start;
+    background-color: rgb(237, 237, 237);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(17, 17, 17);
+}
+
+.comment-avatar {
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    min-height: 40px;/* make sure avatar is not squashed */
+    min-width: 40px;
+    background-color: #6abaf0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold; 
+}
+.comment-email {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.comment-body {
+    margin: 0;
+    font-size: 14px;
+}
+

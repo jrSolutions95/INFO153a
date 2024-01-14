@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 4</title>
+    <!-- Remember no manipulation of CSS or HTML -->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <form name="search">
+        <label id="search-label" for="search">Search the site: </label>
+        <input type="text" name="search" id="search" />
+      </form>
+      <hr />
+      <form name="view-person">
+        View the visitors:
+        <table id="age-table">
+          <tbody>
+            <tr>
+              <td>Age:</td>
+              <td id="age-list">
+                <input type="radio" name="age" id="young" value="young" />
+                <label for="young" class="age-label">less than 18</label>
+
+                <input type="radio" name="age" id="mature" value="mature" />
+                <label for="mature" class="age-label">18-50</label>
+
+                <input type="radio" name="age" id="senior" value="senior" />
+                <label for="senior" class="age-label">more than 50</label>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <input
+          id="view-visitor-submit-btn"
+          type="submit"
+          value="View Visitors"
+        />
+      </form>
+    </main>
+  </body>
+</html>

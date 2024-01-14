@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Is the code above nessicary, was auto-created when project was made */
+
+.blog-posts-container {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog-post {
+  max-width: 95%;
+  border: 1px solid #ccc; 
+  margin: 15px auto; 
+  padding: 10px; 
+  border-radius: 10px; 
+  background-color: rgb(237, 237, 237);
+}
+
+.blog-post-title {
+  font-size: 18px; 
+  font-weight: bold;
+  margin-bottom: 1px; 
+  color: #333; 
+}
+
+.blog-post-body {
+  font-size: 14px; 
+  color: #333;
+}
+
+.comments-container {
+  max-width: 85%;
+  margin: 0 auto 15px;
+}
+/* reused from lab6, with some small modifications */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  background-color: #f8f8f8;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+
+.comment-avatar {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  min-height: 40px;/* make sure avatar is not squashed */
+  min-width: 40px;
+  background-color: #6abaf0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold; 
+}
+.comment-email {
+  margin: 0;
+  margin-bottom: 2px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-body {
+  margin: 0;
+  font-size: 14px;
+}
+
+

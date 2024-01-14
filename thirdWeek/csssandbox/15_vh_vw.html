@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh and Vw units</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header{
+            background: #333 url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"')
+            no-repeat center center/cover;
+            color: white;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 10rem;
+        }
+
+        header h1{
+            font-size: 3rem;
+        }
+
+        header p{
+            margin: 1rem 0;
+        }
+
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background: lightgrey;
+            color: #333;
+            padding: 0.75rem 2rem;
+        }
+
+        section{
+            padding: 2rem;
+        }
+
+        @media (max-height: 450px){
+            header{
+                padding-top: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to out website</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum labore voluptas, quae sed amet sint veritatis facere quisquam at magni consequatur vitae odit ut. Minus voluptate non repellendus modi asperiores.</p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+        <h3>About Out Company</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum eaque sed, perferendis at porro aliquid hic quos earum excepturi culpa esse quasi labore repellat, rem est vero, sapiente itaque possimus!</p>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Align</title>
+    <style>
+
+        #container{
+            background-color: #5555;
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+            align-items: baseline;
+
+
+            align-content: space-around;
+        }
+
+        .item{
+            background: rgb(175, 173, 173);
+            border: #ccc solid 1px;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.5rem;
+            flex-basis:200px;
+        }
+
+        .item-2{
+            align-self: center;
+            order: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="item">
+        <h3>Item 1</h3>
+    </div>
+    <div class="item-2">
+        <h3>Item 2</h3>
+    </div>
+    <div class="item">
+        <h3>Item 3</h3>
+    </div>
+    
+</div>
+    
+</body>
+</html>

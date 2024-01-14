@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #0400cd;
+            color: gray;
+            padding: 20px;
+            height: 100%;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #main-content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        #sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+        }
+
+        header {
+            color: #666;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        #sidebar a {
+             color: gray;
+            text-decoration: none;  
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="sample.html" data-content="home">Home</a></li>
+            <li><a href="people.html" data-content="people">People</a></li>
+            <li><a href="announcement.html" data-content="announcements">Announcements</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <header>Welcome to INFO 153A - Front end web-architecture</header>
+
+        <h3>Course information</h3>
+        <p>This course is a survey of technologies that power the user interfaces of web applications on various devices today. This course will explore the core front-end languages and frameworks and the underlying technologies that enable web applications. This course aims to provide an overview of the technical issues surrounding user interfaces powered by the web today and provide a solid and comprehensive perspective of the web's constantly evolving landscape. This course aims to demystify how the internet powers the user experience and demonstrates how you can understand and build it yourself.</p>
+
+        <br>
+
+        <p>
+            This course is offered as INFO 153A for undergraduate students and INFO 253A for graduate students.
+        </p>
+
+        <p>Both INFO 153A and 253A are held in the same lecture room; INFO 153A will require students to take a take-home practical, while INFO 253A will require students to complete a group-based final project and report.</p>
+
+        <p>In Fall 2020, INFO 153A did not exist: there was a single INFO 253A class that graduates and undergraduates with permission could take. This COCI submission proposes to make INFO 253A into an INFO 153A/253A class, with the changes documented for the undergraduate INFO 253A class mentioned below:</p>
+
+        <ul>
+            <li>INFO 153A will have nine weekly lab assignments due throughout the semester. INFO 253A will have six weekly lab assignments and a final project. Note: The last three labs will be optional for INFO 253A students to attend and will cover some complex React concepts.</li>
+            <li>INFO 153A will have an open book Final Practical Exam, consisting of a project to complete in seven days during Finals Week. INFO 153A students will not participate in the final project.</li>
+        </ul>
+
+        <p>If you want to learn about back-end systems, please check out <a href="https://www.ischool.berkeley.edu/courses/info/253a" target="_blank">Info 253B: Back-End Web Architecture</a>, typically offered in the spring semester.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab05</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Lab05</h1>
+      <form id="farenheiht_to_celcius">
+        <label for="fahrenheit_input">°F</label>
+        <input type="number" name="fahrenheit" id="fahrenheit_input" />
+        <button type="button" onclick="fahrenheitToCelsius()">
+          Fahrenheit to Celsius
+        </button>
+      </form>
+      <form id="celsius_to_farenheiht">
+        <label for="celsius_input">°C</label>
+        <input type="number" name="celsius" id="celsius_input" />
+        <button type="button" onclick="celsiusToFahrenheit()">
+          Celsius to Fahrenheit
+        </button>
+      </form>
+      <output id="result">Result:</output>
+    </div>
+  </body>
+</html>

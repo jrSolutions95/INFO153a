@@ -1,0 +1,198 @@
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.357rem;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav inbox inbox";
+  grid-template-columns: 300px auto;
+  grid-template-rows: 1fr 30fr; 
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  background-color: #dc4c3e;
+  border-top-left-radius: 0.714rem;
+  border-top-right-radius: 0.714rem;
+  color: #ffffff;
+}
+header #menu-icon {
+  padding-left: 3.2rem;
+  padding-right: 0.143rem;
+}
+
+header .search-container {
+  height: 2.143rem;
+  margin: 0.357rem;
+  width: 13.5rem;
+  display: flex;
+  align-items: center;
+  background-color: #f36e62;
+  border-radius: 0.357rem;
+}
+
+/* 
+I used the format below for ids because it is more readable and easier to understand even though we could only do #serach-icon and #search-box
+ without harder .search-container (which I think is Best-Practice)
+I think this better illustrates the relationship between the elements for a person new to CSS and HTML
+*/
+
+header .search-container #search-icon {
+  padding-left: 0.714rem;
+  padding-right: 0.214rem;
+}
+
+header .search-container #search-box {
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 0.286rem;
+  background-color: #f36e62;
+}
+header .search-container #search-box::placeholder {
+  color: #ffffff;
+}
+
+header .check-date-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+header .check-date-container #check-icon {
+  padding-right: 0.4rem;
+}
+
+header .check-date-container #date-text {
+  padding-right: 1.071rem;
+}
+
+nav {
+  background: #fefbf2;
+  color: #000000;
+  grid-area: nav;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0.714rem;
+  padding-top: 1.071rem;
+}
+nav ul li a {
+  height: 1.929rem;
+  display: flex;
+  color: #000000;
+  margin-right: 0.357rem;
+  align-items: center;
+  text-decoration: none;
+}
+nav ul li a img {
+  margin-right: 0.357rem;
+}
+
+nav ul li a p {
+  font-size: 12px;
+  color: #7e7d79;
+  padding-left: 0.357rem;
+}
+
+/* Implemented this because I thought it looked cool */
+nav ul li a:hover {
+  background-color: #ffffff;
+  font-weight: bold;
+  border-radius: 0.357rem;
+}
+
+main {
+  grid-area: inbox;
+  display: flex;
+  margin: 1.429rem 2.857rem 2.857rem 2.857rem;
+  flex-direction: column;
+}
+main h1 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0.714rem;
+}
+
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0.714rem;
+}
+
+main ul hr {
+  border: none;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 0;
+}
+/* The solution for round checkboxes is based of this: https://stackoverflow.com/questions/29617200/how-to-make-checkboxes-rounded
+Also made my own adaptation */
+main ul li input {
+  margin-right: 0.7rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  min-width: 1.3rem;/* Stops the checkboxes from being squashed */
+  min-height: 1.3rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 0.125rem solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+main ul li input:checked {
+  background-color: #919090;
+}
+
+/* Used the provied check-box icon to make the checking of the tasks a bit more pretty, and not just color-fill */
+main ul li input:checked::before {
+  content: "";
+  background-image: url("./assets/check_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Inovked for smaller screen-sizes */
+@media (max-width: 480px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "inbox";
+  }
+  nav {
+    display: none;
+  }
+}

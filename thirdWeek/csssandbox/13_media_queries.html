@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        /* remember this should be own style.css file */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding-top:100px ;
+        }
+
+        h1{
+            display: none;
+        }
+        /* smartphones */
+        @media (max-width: 500px){
+            body{
+                background-color: red;
+            }
+            #smartphoen h1{
+                display: block;
+            }
+        }
+
+         /* tablet */
+         @media (min-width:501px) and (max-width: 768px){
+            body{
+                background-color: blue;
+            }
+            #tablet h1{
+                display: block;
+            }
+        }
+
+         /* normal */
+         @media (min-width:769px) and (max-width: 1024px){
+            body{
+                background-color: green;
+            }
+            #normal h1{
+                display: block;
+            }
+        }
+
+         /* widescreen */
+         @media (min-width:1025px) and (max-width: 1200px){
+            body{
+                background-color: yellow;
+            }
+            #widescreen h1{
+                display: block;
+            }
+        }
+
+         /* landscape */
+         @media (min-width:1201px){
+            body{
+                background-color: purple;
+            }
+            #landscape h1{
+                display: block;
+            }
+        }
+        /* can use style sheef, mobile.css 
+        <link rel="stylesheet media screen and(maxwidth: 768px)" href="mobile.css">
+        */
+            
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="widescreen"><h1>widescreen</h1></div>
+    <div id="normal"><h1>Normal</h1></div>
+    <div id="tablet"><h1>Tablet</h1></div>
+    <div id="smartphoen"><h1>smartphoen</h1></div>
+    <div id="landscape"><h1>landscape</h1></div>
+    
+</body>
+</html>

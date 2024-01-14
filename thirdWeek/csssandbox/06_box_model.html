@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model/ Marigin and padding</title>
+    <style>
+
+        /*CSS Reset*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            background-color: #f4f4f4;
+            border: 2px #777 solid;
+            width: 500px;
+
+            /*padding on all sides*/
+            padding: 20px;
+
+            /*Padding per side, this will overwrite things fother up*/
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+
+            /*Padding shorthand = top right bottom left*/
+            padding: 10px 20px 10px 20px;
+
+            /*Padding shorthand = top/bottom left/right, all thhese are the same!*/
+            padding: 10px 20px;
+
+            /*Marigin on all sides*/
+            margin: 20px;
+
+            /*Margin per side, this will overwrite things fother up*/
+            margin-top: 10px;
+            margin: 20px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+
+            /*Margin shorthand = top right bottom left*/
+            margin: 10px 20px 10px 20px;
+
+            /*Margin shorthand = top/bottom left/right, all thhese are the same!*/
+            margin: 10px 20px;
+
+        }
+        .box h3{
+            padding-bottom: 10px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class ="box">Box One
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus quasi ipsam nobis alias. Laborum, illo illum. Illum consequuntur architecto dicta! Accusamus voluptas quisquam et dolores eos recusandae necessitatibus quia.</p>
+    </div>  
+
+    <div class ="box">Box One
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis necessitatibus quasi ipsam nobis alias. Laborum, illo illum. Illum consequuntur architecto dicta! Accusamus voluptas quisquam et dolores eos recusandae necessitatibus quia.</p>
+    </div>  
+</body>
+</html>

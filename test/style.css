@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+header, footer {
+    flex: 0 0 auto;  /* flex-grow | flex-shrink | flex-basis */
+    background-color: red;
+}
+
+nav, main, aside {
+    flex: 1;  /* flex-grow is 1, will take available space */
+}
+
+/* For larger screens, layout changes to rows with a sidebar */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    nav, main, aside {
+        flex: 1;
+    }
+    aside {
+        flex: 0 0 20%;  /* Sidebar fixed at 20% width */
+    }
+    nav, main {
+        flex: 1;  /* takes up equal amounts of the remaining width */
+    }
+}
+
+
+
